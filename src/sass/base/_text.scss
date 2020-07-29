@@ -1,0 +1,14 @@
+.color-primary {
+  color: map_get($color, primary);
+}
+
+.color-secondary {
+  color: map_get($color, secondary);
+}
+
+.color-fade_secondary {
+  color: map_get($color, fade_secondary);
+}
+.color-third {
+  color: map_get($color, third);
+}

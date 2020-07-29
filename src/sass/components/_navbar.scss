@@ -1,0 +1,124 @@
+.navbar-custom {
+  top: 0;
+  overflow: hidden;
+  font-family: "Roboto Condensed";
+  font-size: 14px;
+  line-height: 19px;
+  text-transform: uppercase;
+  color: map_get($color, third);
+  ul {
+    float: right;
+    li {
+      display: inline;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+  }
+  &__border {
+    border-left: 2px solid map_get($color, primary);
+    border-right: 2px solid map_get($color, primary);
+  }
+  .icon {
+    display: none;
+  }
+}
+
+.navbar-fixed {
+  z-index: 10;
+  top: 0;
+  position: fixed;
+  background: linear-gradient(#354253,rgba(0,0,0,0));;
+}
+
+#navbar-logo {
+  background: url("./../img/logo-white.svg") no-repeat;
+  width: 210px;
+  height: 55px;
+  background-position: center;
+}
+
+@media (max-width: 576px) {
+  #navbar-logo {
+    background: url("./../img/logo1.svg") no-repeat;
+    background-position: right;
+  }
+  .navbar-custom {
+    ul {
+      display: none;
+    }
+    .cross {
+      display: none;
+    }
+    .responsive {
+      position: relative;
+    }
+  }
+  .navbar-mobile__toggler {
+    display: block;
+    cursor: pointer;
+  }
+}
+
+@media (min-width: 576px) {
+  .navbar-mobile__toggler {
+    display: none;
+  }
+}
+
+.navbar-mobile {
+  height: 100vh;
+  width: 100vw;
+  z-index: 1000;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: map_get($color, secondary);
+  text-transform: uppercase;
+  color: map-get($color, third);
+  &__title1 {
+    font-size: 14px;
+    padding-top: 0px;
+    padding-left: 20px;
+  }
+  &__title2 {
+    &__part1 {
+      font-size: 60px;
+      font-weight: normal;
+      line-height: 40px;
+      img {
+        padding-bottom: 2px;
+        height: 45px;
+        width: 45px;
+      }
+    }
+    z-index: 1;
+    font-size: 62px;
+    font-weight: bold;
+    line-height: 50px;
+  }
+  &__title3 {
+    font-size: 19px;
+  }
+  &__fra {
+    font-size: 31px;
+    font-family: "Roboto Condensed";
+  }
+  &__syr {
+    font-size: 31px;
+    font-family: "Roboto Condensed";
+    border-top: 3px solid map_get($color, primary);
+    border-bottom: 3px solid map_get($color, primary);
+  }
+  &__pal {
+    font-size: 31px;
+    font-family: "Roboto Condensed";
+  }
+  &__close {
+    border: none;
+    background: none;
+  }
+}
+
+#navmobile {
+  display: none;
+}

@@ -1,0 +1,87 @@
+.button-donation {
+  color: map_get($color, secondary);
+  border: none;
+  padding: 0px;
+  text-align: center;
+  background-color: map_get($color, face_secondary);
+  &__logo {
+    align-self: baseline;
+  }
+  &__sd {
+    height: 40px;
+    width: 177px;
+    @include button-no-border;
+    &__r {
+      height: 40px;
+      width: 177px;
+      font-size: 12px;
+      font-weight: bold;
+      line-height: 16px;
+      @include button-border;
+    }
+  }
+  &__md {
+    height: 48px;
+    width: 210px;
+    @include button-no-border;
+    &__r {
+      font-size: 14px;
+      line-height: 19px;
+      font-weight: bold;
+      height: 48px;
+      width: 210px;
+      @include button-border;
+    }
+  }
+  &__ld {
+    height: 61px;
+    width: 330px;
+    @include button-no-border;
+    &__r {
+      height: 61px;
+      width: 330px;
+      font-size: 20px;
+      line-height: 35px;
+      font-weight: bold;
+      @include button-border
+    }
+  }
+}
+
+.button-donation--cb
+{
+  border: none;
+  background-color: map_get($color, fade_secondary);
+  height: 63px;
+  padding: 0px;
+  width: 304px;
+  text-align: center;
+  vertical-align: middle;
+  display: inline-block;
+  text-transform: uppercase;
+  color: map_get($color, fourth);
+  font-family: "Roboto Condensed";
+  font-size: 15px;
+}
+
+.button-collapsible
+{
+  width: 35px;
+  height: 23px;
+  background-color: map_get($color, primary);
+  border: none;
+  border-radius: 29px;
+  position: relative;
+  z-index: 1;
+  #cross2 {
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+  }
+  #cross1 {
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}

@@ -1,0 +1,12 @@
+.separator
+{
+  top: 20px;
+  height : 60px;
+  width: 100%;
+  background: linear-gradient(map-get($color, fade_secondary), white);
+}
+
+.line {
+    height: 15px;
+    border-bottom: 5px solid map-get($color, fade_secondary);
+}
