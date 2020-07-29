@@ -1,0 +1,74 @@
+.progress-ring
+{
+  width: 243px;
+  height: 243px;
+  position: relative;
+  &__empty
+  {
+    position: absolute;
+  }
+  &__one-third
+  {
+    position: absolute;
+    left: 115px;
+    top: 23px;
+  }
+  &__amount-of-donation-txt
+  {
+    position: absolute;
+    font-size: 16px;
+    line-height: 17px;
+    font-family: "Roboto Condensed";
+    width: 90px;
+    height: 38px;
+    text-align: center;
+    top: 60px;
+    left: 73px;
+    color: map_get($color, secondary);
+  }
+  &__indicator1
+  {
+    top: 184px;
+    left: 40px;
+    position: absolute;
+    transform: rotate(45deg);
+  }
+  &__indicator2
+  {
+    top: 45px;
+    left: 180px;
+    position: absolute;
+    transform: rotate(45deg);
+  }
+  &__amount-of-donation
+  {
+    position: absolute;
+    color: map_get($color, secondary);
+    font-family: "Roboto Condensed";
+    font-weight: bold;
+    font-size: 26px;
+    top: 105px;
+    left: 80px;
+    &-fix1
+    {
+      position: absolute;
+      font-family: "Roboto Condensed";
+      font-weight: bold;
+      font-size: 20px;
+      top: 15px;
+      left: 185px;
+      color: map_get($color, primary);
+      width: 80px;
+    }
+    &-fix2
+    {
+      position: absolute;
+      font-family: "Roboto Condensed";
+      font-weight: bold;
+      font-size: 20px;
+      top: 190px;
+      left: 15px;
+      color: rgba(53, 66, 83, 0.5);
+    }
+  }
+}

@@ -1,0 +1,34 @@
+#covid-banner
+{
+  background-color: map_get($color, primary);
+  height: 60px;
+  color: map_get($color, third);
+  font-family: 'Roboto Condensed';
+  &__title {
+    font-weight: bold;
+    position: relative;
+    img {
+      padding-right: 4px;
+    }
+  }
+  &__shadow {
+    background-color: linear-gradient(#4F627B, white);
+  }
+}
+
+@media (min-width: 576px) {
+  #covid-banner {
+    font-size: 17px;
+    line-height: 26px;
+  }
+}
+
+@media (max-width: 576px)  {
+  #covid-banner {
+    font-size: 14px;
+    line-height: 15px;
+    &__title {
+      font-size: 17px;
+    }
+  }
+}

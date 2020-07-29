@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="f5d71d99-17b1-420c-8460-63bfa8ccf2e0" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/demo-internship-helios.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/asset/img/+.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/asset/img/1.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/asset/img/2.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/asset/img/Groupe 100.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/asset/img/Groupe 17.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/asset/img/Groupe 23.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/asset/img/Groupe 32.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/asset/img/Ligne 1.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/asset/img/Ligne 2.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/asset/img/ODMpalestine-4170a.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/asset/img/Rectangle 14.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/asset/img/Rectangle 60.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/asset/img/arrow.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/asset/img/arrow2.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/asset/img/cross-mobile-navbar.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/asset/img/cross0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/asset/img/cross1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/asset/img/cross2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/asset/img/cross3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/asset/img/dl.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/asset/img/enligne.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/asset/img/enligne2.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/asset/img/facebook.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/asset/img/home_bg_index.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/asset/img/info-bubble.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/asset/img/logo-white.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/asset/img/logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/asset/img/logo1.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/asset/img/mail.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/asset/img/makeadonation.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/asset/img/navbarcross.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/asset/img/papier.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/asset/img/papier2.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/asset/img/photo-dominique.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/asset/img/photo_president.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/asset/img/point.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/asset/img/tel.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/asset/img/toggler-navbar-mobile.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/asset/img/twitter.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/asset/img/youtube.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sass/base/_text.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sass/base/font.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sass/components/_banner.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sass/components/_buttons.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sass/components/_circle-bar.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sass/components/_navbar.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sass/components/_separator.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sass/main.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sass/pages/_home.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sass/utils/_mixins.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sass/utils/_variables.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gulpfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/gulpfile.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1fMAKariVkhnRa2KzwEdSnBecZK" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f5d71d99-17b1-420c-8460-63bfa8ccf2e0" name="Default Changelist" comment="" />
+      <created>1596017524083</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1596017524083</updated>
+      <workItem from="1596017525646" duration="52000" />
+      <workItem from="1596017578328" duration="2878000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

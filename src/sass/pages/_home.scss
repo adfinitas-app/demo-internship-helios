@@ -1,0 +1,463 @@
+.wrapper {
+  overflow-x: hidden;
+  overflow-y: auto;
+  font-weight: 300;
+}
+
+#home-page {
+  background-image: url("../../asset/img/home_bg_index.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+  height: calc(100vh - 60px);
+  border: none;
+  left: 0px;
+  font-family: "Roboto Condensed";
+  position: relative;
+}
+
+#president-page {
+  color: map_get($color, secondary);
+  font-family: 'Roboto Condensed';
+  position: relative;
+  &__title {
+    margin-top: 20px;
+    font-size: 30px;
+    line-height: 31px;
+    font-weight: normal;
+    position: relative;
+  }
+  &__src {
+    position: relative;
+    margin-top: 25px;
+    font-size: 14px;
+    line-height: 16px;
+  }
+  &__collapsible-content {
+    padding-top: 50px;
+    display: none;
+    overflow: hidden;
+    font-family: "Roboto Condensed";
+    font-size: 20px;
+    line-height: 25px;
+    text-align: left;
+  }
+}
+
+#gui-top {
+  position: absolute;
+  top: -50px;
+  left: -50px;
+}
+#gui-bot {
+  position: absolute;
+  right: 0px;
+  bottom: -25px;
+}
+
+#defisc-page {
+  font-family: "Roboto Condensed";
+  color: map_get($color, secondary);
+  &__title {
+    text-transform: uppercase;
+    line-height: 45px;
+    font-size: 40px;
+    text-align: center;
+  }
+  &__list {
+    padding-top: 40px;
+    &__ifi {
+      color: map_get($color, secondary);
+      border: none;
+      background: white;
+      &__arrow {
+        opacity: 100%;
+      }
+    }
+    &__ir {
+      color: map_get($color, fade_secondary);
+      border: none;
+      background: white;
+      &__arrow {
+        opacity: 0%;
+      }
+    }
+    &__is {
+      color: map_get($color, fade_secondary);
+      border: none;
+      background: white;
+      &__arrow {
+        opacity: 0%;
+      }
+    }
+  }
+  &__ifi {
+    color: map_get($color, secondary);
+    display: flex;
+    &-percent {
+      font-size: 99px;
+      line-height: 111px;
+    }
+    &-text {
+      font-size: 22px;
+      line-height: 26px;
+    }
+    &__ex {
+    }
+  }
+  &__ir {
+    color: map_get($color, secondary);
+    display: none;
+    &-percent {
+      font-size: 99px;
+      line-height: 111px;
+    }
+    &-text {
+      font-size: 22px;
+      line-height: 26px;
+    }
+    &__ex {
+      display: none;
+    }
+  }
+  &__is {
+    color: map_get($color, secondary);
+    display: none;
+    &-percent {
+      font-size: 99px;
+      line-height: 111px;
+    }
+
+    &-text {
+      font-size: 22px;
+      line-height: 26px;
+    }
+    &__ex {
+      display: none;
+    }
+  }
+  &__check {
+    text-decoration: underline;
+    color: map_get($color, secondary);
+    text-align: center;
+    font-family: "Roboto Condensed";
+    font-size: 14px;
+    line-height: 19px;
+  }
+  &__ex-title {
+    padding-top: 80px;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 40px;
+    line-height: 45px;
+    font-family: "Roboto Condensed";
+  }
+}
+
+.custom-amount {
+  position: absolute;
+  border-radius: 7px;
+  border: none;
+  background-color: map_get($color, fade_secondary);
+  font-family: "Roboto Condensed";
+  color: map_get($color, secondary);
+  line-height: 23px;
+  font-size: 25px;
+  font-weight: bold;
+  width: 127px;
+  height: 32px;
+  text-align: center;
+  left: -25px;
+}
+
+::placeholder {
+  color: map_get($color, secondary);
+  opacity: 1;
+}
+
+:-ms-input-placeholder {
+  color: map_get($color, secondary);
+}
+
+::-ms-input-placeholder {
+  color: map_get($color, secondary);
+}
+
+.calendar-page__desc {
+  color: map_get($color, secondary);
+  line-height: 26px;
+  font-size: 20px;
+  font-family: "Roboto Condensed";
+  text-align: center;
+}
+
+#calendar-page {
+  &__title {
+    color: map_get($color, secondary);
+    font-size: 40px;
+    line-height: 45px;
+    font-family: "Roboto Condensed";
+    text-align: center;
+    text-transform: uppercase;
+  }
+  &__desc-covid {
+    color: rgba(53, 66, 83, 0.5);
+    text-align: center;
+    line-height: 20px;
+    font-size: 16px;
+    font-family: "Roboto Condensed";
+  }
+  &__papier {
+    font-family: "Roboto Condensed";
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 26px;
+    text-align: center;
+    background-color: white;
+    position: relative;
+    color: map_get($color, fade_secondary);
+    &__arrow {
+      display: none;
+    }
+    &__date {
+      display: none;
+    }
+  }
+  &__enligne {
+    font-family: "Roboto Condensed";
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 26px;
+    text-align: center;
+    border: none;
+    position: relative;
+    background-color: white;
+    color: map_get($color, secondary);
+    &__arrow {
+      display: block;
+    }
+    &__date {
+      display: flex;
+    }
+  }
+}
+
+
+.date-card {
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 27px;
+  font-family: "Roboto Condensed";
+  .date {
+    color: map_get($color, primary);
+  }
+  .jour {
+    font-size: 20px;
+  }
+  .mois {
+    font-size: 40px;
+  }
+  .heure {
+    font-size: 14px;
+  }
+  .zone {
+    color: map_get($color, secondary);
+    font-weight: bold;
+    font-size: 22px;
+    padding-top: 5px;
+  }
+}
+
+.contact-page {
+  font-family: "Roboto Condensed";
+  &__title {
+    text-transform: uppercase;
+    font-size: 25px;
+    line-height: 25px;
+    padding-bottom: 8px;
+  }
+  .contact-page__question {
+    background-color: map_get($color, fade_secondary);
+    font-size: 20px;
+    line-height: 25px;
+  }
+  .contact-page__savoir {
+    background-color: map_get($color, fade_secondary);
+    font-size: 16px;
+    line-height: 21px;
+  }
+}
+
+.bold {
+  font-weight: bolder;
+}
+
+footer {
+  font-family: "Roboto Condensed";
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: map_get($color, secondary);
+  button {
+    background: none;
+    border: none;
+  }
+  a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: map_get($color, secondary);
+    font-weight: bold;
+    &:link {
+      text-decoration: none;
+    }
+  }
+}
+
+@media (min-width: 576px) {
+  #img-cross {
+    &0 {
+      position: absolute;
+      left: 250px;
+      top: calc((1vh / 2));
+    }
+    &1 {
+      position: absolute;
+      right: -423px;
+      top: 80px;
+    }
+    &2 {
+      position: absolute;
+      top: -530px;
+      left: -415px;
+    }
+    &3 {
+      position: absolute;
+      right: 60px;
+      top: -259px;
+    }
+  }
+  .calendar-page__middle-card {
+    border-right: 5px solid map_get($color, fade_secondary);
+    border-left: 5px solid map_get($color, fade_secondary);
+  }
+  #home-page {
+    &__title1 {
+      text-transform: uppercase;
+      font-size: 34px;
+      padding-right: 100px;
+      padding-top: 120px;
+    }
+    &__title2 {
+      &__part1 {
+        font-size: 110px;
+        font-weight: normal;
+      }
+      z-index: 1;
+      text-transform: uppercase;
+      font-size: 114px;
+      font-weight: bold;
+      line-height: 72px;
+      padding-top: 100px;
+      img {
+        padding-bottom: 10px;
+      }
+    }
+    &__title3 {
+      padding-top: 120px;
+      padding-left: 20px;
+      text-transform: uppercase;
+      font-size: 22px;
+    }
+    &__button-donation {
+      padding-left: 20px;
+      padding-top: 0px;
+    }
+  }
+}
+
+@media (max-width: 576px)  {
+  #img-cross {
+    &0 {
+      position: absolute;
+      height: 500px;
+      width: 500px;
+      left: calc(1vw - 50px);
+    }
+    &1 {
+      position: absolute;
+      right: -225px;
+      top: -335px;
+      height: 450px;
+      width: 450px;
+    }
+    &2 {
+      position: absolute;
+      top: -830px;
+      left: -220px;
+      height: 485px;
+      width: 485px;
+    }
+    &3 {
+      position: absolute;
+      right: -100px;
+      top: -259px;
+    }
+  }
+  .calendar-page__middle-card {
+    border-top: 5px solid map_get($color, fade_secondary);
+    border-bottom: 5px solid map_get($color, fade_secondary);
+  }
+  #defisc-page__ifi-text {
+    text-align: center;
+  }
+  #defisc-page__ir-text {
+    text-align: center;
+  }
+  #defisc-page__is-text {
+    text-align: center;
+  }
+  #home-page {
+    &__title1 {
+      text-transform: uppercase;
+      font-size: 14px;
+      padding-top: 340px;
+    }
+    &__title2 {
+      &__part1 {
+        font-size: 60px;
+        font-weight: normal;
+      }
+      z-index: 1;
+      text-transform: uppercase;
+      font-size: 62px;
+      font-weight: bold;
+      line-height: 50px;
+      img {
+        padding-bottom: 2px;
+        height: 45px;
+        width: 45px;
+      }
+    }
+    &__title3 {
+      text-transform: uppercase;
+      font-size: 20px;
+    }
+    &__button-donation {
+    }
+  }
+}
+
+.defisc-legend1 {
+  line-height: 20px;
+  font-family: "Roboto Condensed";
+  font-size: 14px;
+  color: map_get($color, primary);
+}
+
+.defisc-legend2 {
+  line-height: 20px;
+  font-family: "Roboto Condensed";
+  font-size: 14px;
+  color: rgba(53, 66, 83, 0.5);
+}
