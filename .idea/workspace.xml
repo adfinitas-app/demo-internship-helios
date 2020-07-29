@@ -19,19 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f5d71d99-17b1-420c-8460-63bfa8ccf2e0" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/gulpfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/gulpfile.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/asset/img/(c) Estelle Hoffert - maraude strg28055.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/asset/img/(c) Estelle Hoffert - maraude strg28337.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/asset/img/Groupe 146.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/asset/img/Groupe 152.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/asset/img/Screen Shot 2020-03-20 at 9.18.31 AM.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/asset/img/cross1.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/asset/img/dominique.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/asset/img/home_page_bg.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sass/pages/_home.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/pages/_home.scss" afterDir="false" />
-    </list>
+    <list default="true" id="f5d71d99-17b1-420c-8460-63bfa8ccf2e0" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -69,7 +57,7 @@
       <option name="presentableId" value="Default" />
       <updated>1596017524083</updated>
       <workItem from="1596017525646" duration="52000" />
-      <workItem from="1596017578328" duration="1901000" />
+      <workItem from="1596017578328" duration="2105000" />
     </task>
     <servers />
   </component>
