@@ -20,10 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f5d71d99-17b1-420c-8460-63bfa8ccf2e0" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/sass/components/_modal-dom.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sass/components/_buttons.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/components/_buttons.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sass/components/_navbar.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/components/_navbar.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sass/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/main.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sass/pages/_home.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/pages/_home.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -82,6 +82,10 @@
     </option>
   </component>
   <component name="WindowStateProjectService">
+    <state x="455" y="-731" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1596111559931">
+      <screen x="-255" y="-1080" width="1920" height="1080" />
+    </state>
+    <state x="455" y="-731" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1440.900/-255.-1080.1920.1080@-255.-1080.1920.1080" timestamp="1596111559931" />
     <state x="370" y="-839" width="670" height="676" key="search.everywhere.popup" timestamp="1596099825958">
       <screen x="-255" y="-1080" width="1920" height="1080" />
     </state>
