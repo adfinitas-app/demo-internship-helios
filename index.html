@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="././dist/asset/css/styles.min.css">
 </head>
 <body>
-    <div class="wrapper">
+    <div class="wrapper" id="wrapper">
         <div class="container-fluid">
             <header>
                 <div class="row justify-content-center align-content-center" id="covid-banner">
@@ -96,38 +96,54 @@
                             <div class="col-12" id="navscroll">
                                 <nav class="navbar-custom pt-2">
                                     <div class="row justify-content-end">
-                                        <div class="col-4">
-                                            <div class="row pb-1 pt-2 cross">
-                                                <div class="col-2 pl-0 d-flex justify-content-start">
+                                        <div class="col-5">
+                                            <div class="row justify-content-end pb-1 pt-2 cross">
+                                                <div class="col-2 d-flex justify-content-center">
                                                     <img src="./dist/asset/img/navbarcross.svg">
                                                 </div>
-                                                <div class="col-2 pl-3 d-flex justify-content-start">
+                                                <div class="col-2 d-flex justify-content-center">
                                                     <img src="./dist/asset/img/navbarcross.svg" style="display: none">
                                                 </div>
-                                                <div class="col-2 pl-4 d-flex justify-content-start">
+                                                <div class="col-2 d-flex justify-content-center">
                                                     <img src="./dist/asset/img/navbarcross.svg" style="display: none">
+                                                </div>
+                                                <div class="offset-5">
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="row">
-                                        <div class="col-2 px-0" id="navbar-logo">
+                                        <div class="col-0 col-md-2 px-0" id="navbar-logo">
+                                            <img src="dist/asset/img/logo-white.svg">
+                                        </div>
+                                        <div class="col-2 col-md-0 px-0" id="navbar-mobile-logo">
+                                            <img src="dist/asset/img/logo1.svg">
                                         </div>
                                         <div class="col-md-0 col-2 navbar-mobile__toggler">
                                             <img src="./dist/asset/img/toggler-navbar-mobile.svg" onclick="navmobile('bruh')">
                                         </div>
-                                        <div class="col px-0">
-                                            <ul>
-                                                <li><a>En Palestine</a></li>
-                                                <li class="navbar-custom__border"><a>En Syrie</a></li>
-                                                <li><a>En France</a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="col-md-2 col-6 px-0 d-flex justify-content-center" style="z-index: 2">
-                                            <button class="button-donation__sd__r pt-md-w5">
-                                                <img src="./dist/asset/img/Groupe%2023.svg" class="button-donation__logo">
-                                                Je fais un don ifi
-                                            </button>
+                                        <div class="offset-5 col-5">
+                                            <div class="row justify-content-end pb-1 pt-0 cross">
+                                                <div class="col-6">
+                                                    <div class="row">
+                                                        <div class="col px-0 d-flex justify-content-center">
+                                                            <a href="#" class="navbar-link">En France</a>
+                                                        </div>
+                                                        <div class="col px-0 d-flex justify-content-center navbar-custom__border">
+                                                            <a href="#" class="navbar-link">En Syrie</a>
+                                                        </div>
+                                                        <div class="col px-0 d-flex justify-content-center">
+                                                            <a href="#" class="navbar-link">En Palestine</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-5 col-2 px-0 d-flex justify-content-center" style="z-index: 2">
+                                                    <button class="button-donation__sd__r pt-md-w5">
+                                                        <img src="./dist/asset/img/Groupe%2023.svg" class="button-donation__logo">
+                                                        Je fais un don ifi
+                                                    </button>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </nav>
@@ -166,16 +182,25 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="row justify-content-center justify-content-md-end">
-                                    <div class="col-md-6 col-12 pl-md-1 pt-2 d-flex justify-content-center justify-content-md-start" id="home-page__button-donation">
-                                        <button class="button-donation__md__r pt-md-w5">
+                                <div class="row justify-content-center justify-content-md-end" id="home-page__button-donation">
+                                    <div class="col-6 pt-2 d-flex justify-content-center justify-content-md-start" id="home-page__button-donation">
+                                        <button class="button-donation__md__r">
                                             <img src="./dist/asset/img/Groupe%2023.svg" class="button-donation__logo">
                                             Je fais un don ifi
                                         </button>
                                     </div>
                                 </div>
-                            </div>
-                            <img src="./dist/asset/img/cross0.png" id="img-cross0">
+                                <div class="row justify-content-center justify-content-md-end" id="home-page__button-donation2">
+                                    <div class="col px-0">
+                                        <div class="col-md-0 col-12 pl-md-1 pt-2" id="home-page__button-donation2">
+                                            <button class="button-donation__ld__r">
+                                                <img src="./dist/asset/img/Groupe%2023.svg" class="button-donation__logo">
+                                                Je fais un don ifi
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                           <!-- <img src="./dist/asset/img/cross0.png" id="img-cross0">-->
                         </div>
                     </div>
                 </div>
@@ -201,6 +226,13 @@
                             </div>
                         </div>
                         <div class="row justify-content-center justify-content-md-start">
+                            <div class="row" id="button-collapsible-before">
+                                <div class="col-12 d-flex justify-content-center justify-content-md-start pt-4 pb-5 pr-0 pl-4">
+                                    <button class="button-collapsible pl-2" onclick="president()">
+                                        <img src="./dist/asset/img/Groupe%2032.svg" id="cross1">
+                                    </button>
+                                </div>
+                            </div>
                             <div id="president-page__collapsible-content" class="col-md-10 pr-md-3">
                                 La pandémie de Covid-19 à laquelle notre monde est confronté révèle avec gravité combien la mission originelle de l’Ordre de Malte est plus que jamais d’actualité.
                                 <br><br>
@@ -228,12 +260,13 @@
                                 Je vous remercie d’avance de saisir cette opportunité fiscale pour faire vivre vos valeurs et nous donner + de forces pour prendre soin des + fragiles.
                                 <br><br>
                                 Recevez mes pensées chaleureuses, et prenez soin de vous.
+                            <div class="row" id="button-collapsible-after">
+                                <div class="col-12 d-flex justify-content-center justify-content-md-start pt-4 pb-5">
+                                    <button class="button-collapsible pl-2" onclick="president()">
+                                        <img src="./dist/asset/img/Ligne%202.svg" id="cross2">
+                                    </button>
+                                </div>
                             </div>
-                            <div class="col-12 d-flex justify-content-center justify-content-md-start pt-4 pb-5">
-                                <button class="button-collapsible pl-2" onclick="president()">
-                                    <img src="./dist/asset/img/Groupe%2032.svg" id="cross1">
-                                    <img src="./dist/asset/img/Ligne%202.svg" id="cross2">
-                                </button>
                             </div>
                         </div>
                     </div>
@@ -247,10 +280,12 @@
                     <div class="col-md-6 col-10" id="defisc-page">
                         <div class="row justify-content-center" id="defisc-page__title">
                             <div class="col-12 px-1">
-                                <span class="color-primary">Défiscalisez</span> votre don,
-                                pour prendre soins des plus fragiles
-                            </div>
-                            <div class="col-10 line">
+                                <div>
+                                    <span class="color-primary">Défiscalisez</span> votre don,
+                                    pour prendre soins des plus fragiles
+                                </div>
+                                <div class="col-12 line">
+                                </div>
                             </div>
                             <div class="col-8" id="defisc-page__list">
                                 <div class="row justify-content-center">
@@ -278,51 +313,86 @@
                             </div>
                         </div>
                         <div class="row justify-content-center" id="defisc-page__ifi">
-                            <div class="col-md-3 d-flex justify-content-center justify-content-md-start" id="defisc-page__ifi-percent">
-                                75%
-                            </div>
-                            <div class="col-md-6 pt-md-3 px-0" id="defisc-page__ifi-text">
-                                <div class="pl-md-2">
-                                    du montant de mon don à la Fondation
-                                    sont déductibles de cet impôt, dans la limite de 50 000 € par an.
+                            <div class="col-12 px-0">
+                                <div class="row justify-content-center px-0">
+                                    <div class="col-md-3 d-flex justify-content-center justify-content-md-start" id="defisc-page__ifi-percent">
+                                        75%
+                                    </div>
+                                    <div class="col-md-6 pt-md-3 px-0" id="defisc-page__ifi-text">
+                                        <div class="pl-md-2">
+                                            du montant de mon don à la Fondation
+                                            sont déductibles de cet impôt, dans la limite de 50 000 € par an.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row justify-content-center pt-4">
+                                    <button class="button-donation__ld__r">
+                                        <img src="./dist/asset/img/Groupe%2023.svg" class="button-donation__logo">
+                                        Je fais un don ifi
+                                    </button>
+                                </div>
+                                <div class="row justify-content-center pt-3">
+                                    <button class="button-donation__ld" type="button" data-toggle="modal" data-target="#exampleModal">
+                                        Je fais un don par virement bancaire
+                                    </button>
+                                </div>
+                                <div class="row justify-content-center pt-3">
+                                    <a href="#" id="defisc-page__check">
+                                        Je n’ai pas d’autres moyens de paiement,<br>
+                                        je fais un don par chèque
+                                    </a>
                                 </div>
                             </div>
                         </div>
                         <div class="row justify-content-center" id="defisc-page__ir">
-                            <div class="col-md-3 d-flex pr-md-0 justify-content-center justify-content-md-start" id="defisc-page__ir-percent">
-                                66%
-                            </div>
-                            <div class="col-md-7 pt-md-3 px-0" id="defisc-page__ir-text">
-                                <div class="pl-md-2">
-                                    du montant de mon don à la Fondation sont déductibles de l’Impôt sur le revenu, dans la limite de 20% du revenu net imposable.
+                            <div class="col-12 px-0">
+                                <div class="row justify-content-center">
+                                    <div class="col-md-3 d-flex pr-md-0 justify-content-center justify-content-md-start" id="defisc-page__ir-percent">
+                                        66%
+                                    </div>
+                                    <div class="col-md-7 pt-md-3 px-0" id="defisc-page__ir-text">
+                                        <div class="pl-md-2">
+                                            du montant de mon don à la Fondation sont déductibles de l’Impôt sur le revenu, dans la limite de 20% du revenu net imposable.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row justify-content-center pt-4">
+                                    <button class="button-donation__ld__r">
+                                        <img src="./dist/asset/img/Groupe%2023.svg" class="button-donation__logo">
+                                        Je fais un don ir en ligne
+                                    </button>
                                 </div>
                             </div>
                         </div>
                         <div class="row justify-content-center" id="defisc-page__is">
-                            <div class="col-md-3 pt-md-3 pr-md-0 d-flex justify-content-center justify-content-md-start" id="defisc-page__is-percent">
-                                60%
+                            <div class="col-12 px-0">
+                                <div class="row justify-content-center">
+                                    <div class="col-md-3 pt-md-3 pr-md-0 d-flex justify-content-center justify-content-md-start" id="defisc-page__is-percent">
+                                        60%
+                                    </div>
+                                    <div class="col-md-7 pt-md-3 px-0" id="defisc-page__is-text">
+                                        <div class="pl-md-2 pr-md-4">
+                                            du montant de mon don à la Fondation, au titre du mécénat, sont déductibles de cet impôt, dans la limite de 20 000€ ou de 0,5% du chiffre d’affaires hors taxes (au choix).                                </div>
+                                    </div>
+                                </div>
+                                <div class="row justify-content-center pt-4">
+                                    <button class="button-donation__ld__r">
+                                        <img src="./dist/asset/img/Groupe%2023.svg" class="button-donation__logo">
+                                        Je fais un don en ligne
+                                    </button>
+                                </div>
+                                <div class="row justify-content-center pt-3">
+                                    <button class="button-donation__ld" type="button" data-toggle="modal" data-target="#exampleModal">
+                                        Je fais un don par virement bancaire
+                                    </button>
+                                </div>
+                                <div class="row justify-content-center pt-3">
+                                    <a href="#" id="defisc-page__check">
+                                        Je n’ai pas d’autres moyens de paiement,<br>
+                                        je fais un don par chèque
+                                    </a>
+                                </div>
                             </div>
-                            <div class="col-md-7 pt-md-3 px-0" id="defisc-page__is-text">
-                                <div class="pl-md-2 pr-md-4">
-                                    du montant de mon don à la Fondation, au titre du mécénat, sont déductibles de cet impôt, dans la limite de 20 000€ ou de 0,5% du chiffre d’affaires hors taxes (au choix).                                </div>
-                            </div>
-                        </div>
-                        <div class="row justify-content-center pt-4">
-                            <button class="button-donation__ld__r">
-                                  <img src="./dist/asset/img/Groupe%2023.svg" class="button-donation__logo">
-                                  Je fais un don ifi
-                            </button>
-                        </div>
-                        <div class="row justify-content-center pt-3">
-                            <button class="button-donation__ld">
-                                Je fais un don par virement bancaire
-                            </button>
-                        </div>
-                        <div class="row justify-content-center pt-3">
-                            <a href="#" id="defisc-page__check">
-                                Je n’ai pas d’autres moyens de paiement,<br>
-                                je fais un don par chèque
-                            </a>
                         </div>
                     </div>
                 </div>
@@ -334,17 +404,25 @@
                     </div>
                 </div>
                 <div class="row justify-content-center py-4">
-                    <div class="col-md-2 col-5 px-0 px-md-1 defisc-legend1">
-                        <svg class="" height="14" width="14">
-                            <rect x="0" y="0" width="14" height="14" fill="#E2001A"/>
-                        </svg>
-                        Montant après déduction
+                    <div class="col-md-2 col-6 px-0 px-md-1 pr-md-0 defisc-legend1">
+                            <div class="col-md-9 col-12 pr-md-0 d-flex justify-content-center">
+                                <svg class="" height="14" width="14">
+                                    <rect x="0" y="0" width="14" height="14" fill="#E2001A"/>
+                                </svg>
+                                <div class="pl-1">
+                                    Montant après déduction
+                                </div>
+                            </div>
                     </div>
-                    <div class="col-md-2 col-4 pr-0 px-md-1 defisc-legend2">
-                        <svg class="" height="14" width="14">
-                            <rect x="0" y="0" width="14" height="14" fill="rgba(53, 66, 83, 0.5)"/>
-                        </svg>
-                        Déduction fiscale
+                    <div class="col-md-2 col-4 pr-0 pl-0 px-md-1  defisc-legend2">
+                        <div class="col-md-10 col-12 pl-0 d-flex justify-content-center justify-content-md-end">
+                            <svg class="" height="14" width="14">
+                                <rect x="0" y="0" width="14" height="14" fill="rgba(53, 66, 83, 0.5)"/>
+                            </svg>
+                            <div class="pl-1">
+                                Déduction fiscale
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="row justify-content-center" id="defisc-page__ifi__ex">
@@ -404,7 +482,7 @@
                             </svg>
                             <span class="progress-ring__amount-of-donation-txt">Montant<br>de votre don</span>
                             <span class="progress-ring__amount-of-donation">
-                                <input type="text" id="custom-amount1" class="custom-amount" value="10 000€" onkeypress="calc_defisc_amount(event, '1', 75)">
+                                <input type="text" id="custom-amount1" class="custom-amount" value="10 000€" oninput="calc_defisc_amount(event, '1', 75)">
                             </span>
                             <span class="progress-ring__amount-of-donation-fix1" id="fix-amount-t-1">2 500€</span>
                             <span class="progress-ring__amount-of-donation-fix2" id="fix-amount-b-1">7 500€</span>
@@ -468,7 +546,7 @@
                             </svg>
                             <span class="progress-ring__amount-of-donation-txt">Montant<br>de votre don</span>
                             <span class="progress-ring__amount-of-donation">
-                                <input type="text" id="custom-amount2" class="custom-amount" value="1 000€" onkeypress="calc_defisc_amount(event, '2', 66)">
+                                <input type="text" id="custom-amount2" class="custom-amount" value="1 000€" oninput="calc_defisc_amount(event, '2', 66)">
                             </span>
                             <span class="progress-ring__amount-of-donation-fix1" id="fix-amount-t-2">340€</span>
                             <span class="progress-ring__amount-of-donation-fix2" id="fix-amount-b-2">660€</span>
@@ -532,7 +610,7 @@
                             </svg>
                             <span class="progress-ring__amount-of-donation-txt">Montant<br>de votre don</span>
                             <span class="progress-ring__amount-of-donation">
-                                <input type="text" id="custom-amount3" value="30 000€" class="custom-amount" onkeypress="calc_defisc_amount(event, '3', 60)">
+                                <input type="text" id="custom-amount3" value="30 000€" class="custom-amount" oninput="calc_defisc_amount(event, '3', 60)">
                             </span>
                             <span class="progress-ring__amount-of-donation-fix1" id="fix-amount-t-3">12 000€</span>
                             <span class="progress-ring__amount-of-donation-fix2" id="fix-amount-b-3">18 000€</span>
@@ -545,12 +623,14 @@
             </section>
             <section>
                 <div class="row justify-content-center">
-                    <div class="col-8">
+                    <div class="col-md-5 col-7">
                         <div id="calendar-page__title">
-                            Votre <span class="color-primary">calendrier</span> fiscal 2020
+                            <div>
+                                Votre <span class="color-primary">calendrier</span> fiscal 2020
+                            </div>
+                            <div class="col-12 line">
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-5 line">
                     </div>
                     <div class="row justify-content-center">
                         <div class="col-md-7 col-10 py-4 calendar-page__desc">
@@ -564,7 +644,7 @@
                     </div>
                     <div class="row justify-content-center">
                         <div class="col-12 pb-5 calendar-page__desc">
-                            Dates limites de déclartion :
+                            Dates limites de déclaration :
                         </div>
                     </div>
                 <div class="row justify-content-center" style="position: relative">
@@ -824,6 +904,25 @@
                     </div>
                 </div>
             </footer>
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            ...
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <script>
@@ -839,26 +938,27 @@
         }
 
         function navmobile(action) {
-            if (action === 'close')
+            if (action === 'close') {
                 document.getElementById('navmobile').style.display = 'none';
-            else
+                document.getElementById('wrapper').className = 'wrapper overflow-y-1';
+            } else {
                 document.getElementById('navmobile').style.display = 'flex';
-            console.log(document.getElementById('navmobile').style.display);
-            console.log(action);
+                document.getElementById('wrapper').className = 'wrapper overflow-y-0';
+            }
         }
 
         function president() {
             var content_disp = document.getElementById('president-page__collapsible-content');
-            var cross_disp1 = document.getElementById('cross1');
-            var cross_disp2 = document.getElementById('cross2');
+            var button1 = document.getElementById('button-collapsible-after');
+            var button2 = document.getElementById('button-collapsible-before');
             if (content_disp.style.display ==='block') {
                 content_disp.style.display = 'none';
-                cross_disp1.style.display = 'inline';
-                cross_disp2.style.display = 'none';
+                button2.style.display = 'flex';
+                button1.style.display = 'none';
             } else {
                 content_disp.style.display = 'block';
-                cross_disp1.style.display = 'none';
-                cross_disp2.style.display = 'inline';
+                button2.style.display = 'none';
+                button1.style.display = 'flex';
             }
         }
         function defisc(ar) {
@@ -919,7 +1019,6 @@
             }
         }
         function calc_defisc_amount(e, orga, percent) {
-            if(e.keyCode === 13) {
                 var name = "custom-amount" + orga;
                 var tb = document.getElementById(name).value;
                 if (!isNaN(tb)) {
@@ -928,7 +1027,6 @@
                     value = Math.trunc(tb - value);
                     document.getElementById("fix-amount-t-" + orga).innerHTML = value + "€";
                 }
-            }
         }
         function calendar(av) {
             var enligne = document.getElementById("calendar-page__enligne");

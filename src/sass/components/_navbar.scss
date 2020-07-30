@@ -23,24 +23,51 @@
   }
 }
 
+.navbar-link {
+  text-decoration: none;
+  font-size: 14px;
+  cursor: pointer;
+  color: map_get($color, third);
+}
+
+.navbar-link:link {
+  text-decoration: none;
+}
+
 .navbar-fixed {
-  z-index: 10;
+  z-index: 110;
   top: 0;
   position: fixed;
   background: linear-gradient(#354253,rgba(0,0,0,0));;
 }
 
 #navbar-logo {
-  background: url("./../img/logo-white.svg") no-repeat;
-  width: 210px;
-  height: 55px;
-  background-position: center;
+  position: relative;
+  height: 57px;
+  img {
+    position: absolute;
+    left: 20px;
+    top: 0px;
+  }
+}
+
+#navbar-mobile-logo {
+  display: none;
+  position: relative;
+  height: 56px;
+  img {
+    position: absolute;
+    left: 20px;
+    top: 0px;
+  }
 }
 
 @media (max-width: 576px) {
   #navbar-logo {
-    background: url("./../img/logo1.svg") no-repeat;
-    background-position: right;
+    display: none;
+  }
+  #navbar-mobile-logo {
+    display: flex;
   }
   .navbar-custom {
     ul {
@@ -120,5 +147,10 @@
 }
 
 #navmobile {
+  display: none;
+  overflow-y: hidden;
+}
+
+#button-collapsible-after {
   display: none;
 }
