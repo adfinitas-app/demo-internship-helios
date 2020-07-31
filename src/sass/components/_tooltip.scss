@@ -1,0 +1,11 @@
+#defisc-page__list{
+  &__ifi__tooltip {
+    @include tooltip;
+  }
+  &__ir__tooltip {
+    @include tooltip;
+  }
+  &__is__tooltip {
+    @include tooltip;
+  }
+}

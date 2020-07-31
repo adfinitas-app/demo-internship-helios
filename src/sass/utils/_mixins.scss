@@ -6,6 +6,11 @@
   box-sizing: border-box;
   text-transform: uppercase;
   z-index: 10;
+  transition: box-shadow 0.6s linear, border 1s linear;
+  &:hover {
+    transform: scale(1.2);
+    box-shadow: inset 0px 0px 0px 0px map_get($color, third);
+  }
 }
 
 @mixin button-no-border {
@@ -14,4 +19,22 @@
   line-height: 45px;
   border: none;
   z-index: 10;
+  &:hover {
+    transform: scale(1.2);
+  }
+}
+
+@mixin tooltip {
+  display: none;
+  font-family: "Roboto Condensed";
+  font-size: 14px;
+  line-height: 17px;
+  color: map_get($color, third);
+  background-color: map_get($color, secondary);
+  top: -80px;
+  left: -70px;
+  width: 181px;
+  height: 57px;
+  position: absolute;
+  padding: 10px;
 }

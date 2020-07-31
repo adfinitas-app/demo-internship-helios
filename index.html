@@ -99,13 +99,13 @@
                                         <div class="col-5">
                                             <div class="row justify-content-end pb-1 pt-2 cross">
                                                 <div class="col-2 d-flex justify-content-center">
-                                                    <img src="./dist/asset/img/navbarcross.svg">
+                                                    <img src="./dist/asset/img/navbarcross.svg" class="breath">
                                                 </div>
                                                 <div class="col-2 d-flex justify-content-center">
-                                                    <img src="./dist/asset/img/navbarcross.svg" style="display: none">
+                                                    <img src="./dist/asset/img/navbarcross.svg" class="" style="display: none">
                                                 </div>
                                                 <div class="col-2 d-flex justify-content-center">
-                                                    <img src="./dist/asset/img/navbarcross.svg" style="display: none">
+                                                    <img src="./dist/asset/img/navbarcross.svg" class="" style="display: none">
                                                 </div>
                                                 <div class="offset-5">
                                                 </div>
@@ -226,11 +226,13 @@
                             </div>
                         </div>
                         <div class="row justify-content-center justify-content-md-start">
-                            <div class="row" id="button-collapsible-before">
-                                <div class="col-12 d-flex justify-content-center justify-content-md-start pt-4 pb-5 pr-0 pl-4">
-                                    <button class="button-collapsible pl-2" onclick="president()">
-                                        <img src="./dist/asset/img/Groupe%2032.svg" id="cross1">
-                                    </button>
+                            <div class="col-md-10 pr-md-3" id="button-collapsible-before">
+                                <div class="row">
+                                    <div class="col-12 d-flex justify-content-center justify-content-md-start pt-4 pb-5 pr-0">
+                                        <button class="button-collapsible pl-2" onclick="president()">
+                                            <img src="./dist/asset/img/Groupe%2032.svg" id="cross1">
+                                        </button>
+                                    </div>
                                 </div>
                             </div>
                             <div id="president-page__collapsible-content" class="col-md-10 pr-md-3">
@@ -290,13 +292,22 @@
                             <div class="col-8" id="defisc-page__list">
                                 <div class="row justify-content-center">
                                     <div class="col-md-3 col-4">
-                                        <button id="defisc-page__list__ifi" onclick="defisc('ifi')">IFI</button>
+                                        <button id="defisc-page__list__ifi" onclick="defisc('ifi')">
+                                            IFI
+                                            <span id="defisc-page__list__ifi__tooltip">Je suis redevable de l'Impôt sur la Fortune Immobilière ?</span>
+                                        </button>
                                     </div>
                                     <div class="col-md-3 col-4">
-                                        <button id="defisc-page__list__ir" onclick="defisc('ir')">IR</button>
+                                        <button id="defisc-page__list__ir" onclick="defisc('ir')">
+                                            IR
+                                            <span id="defisc-page__list__ir__tooltip">Je suis redevable de l'Impôt sur le Revenu ?</span>
+                                        </button>
                                     </div>
                                     <div class="col-md-3 col-4">
-                                        <button id="defisc-page__list__is" onclick="defisc('is')">IS</button>
+                                        <button id="defisc-page__list__is" onclick="defisc('is')">
+                                            IS
+                                            <span id="defisc-page__list__is__tooltip">Je suis redevable de l'Impôt sur les Sociétés ?</span>
+                                        </button>
                                     </div>
                                 </div>
                                 <div class="row justify-content-center">
@@ -312,7 +323,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="row justify-content-center" id="defisc-page__ifi">
+                        <div class="row justify-content-center animated fadeIn" id="defisc-page__ifi">
                             <div class="col-12 px-0">
                                 <div class="row justify-content-center px-0">
                                     <div class="col-md-3 d-flex justify-content-center justify-content-md-start" id="defisc-page__ifi-percent">
@@ -949,6 +960,8 @@
             </div>
         </div>
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
     <script>
         window.onscroll = function() {navscroll()};
         function navscroll() {
@@ -970,21 +983,71 @@
                 document.getElementById('wrapper').className = 'wrapper overflow-y-0';
             }
         }
+        setInterval('animationBreath()', 3000);
 
-        function president() {
-            var content_disp = document.getElementById('president-page__collapsible-content');
-            var button1 = document.getElementById('button-collapsible-after');
-            var button2 = document.getElementById('button-collapsible-before');
-            if (content_disp.style.display ==='block') {
-                content_disp.style.display = 'none';
-                button2.style.display = 'flex';
-                button1.style.display = 'none';
-            } else {
-                content_disp.style.display = 'block';
-                button2.style.display = 'none';
-                button1.style.display = 'flex';
-            }
+        function animationBreath() {
+            $('.breath').fadeOut(1500);
+            $('.breath').fadeIn(1500);
         }
+
+        $(document).ready(function(){
+            $("#button-collapsible-before").click(function () {
+                $("#button-collapsible-before").hide();
+                $("#button-collapsible-after").show();
+                $("#president-page__collapsible-content").slideDown();
+            });
+            $("#button-collapsible-after").click(function () {
+                $("#button-collapsible-before").show();
+                $("#button-collapsible-after").hide();
+                $("#president-page__collapsible-content").slideUp();
+            });
+            $("#calendar-page__papier").click(function(){
+                $("#calendar-page__enligne__date").fadeOut(0);
+                $("#calendar-page__papier__date").css("display", "flex");
+                $("#calendar-page__papier__date").hide();
+                $("#calendar-page__papier__date").fadeIn(500);
+            });
+            $("#calendar-page__enligne").click(function(){
+                $("#calendar-page__enligne__date").fadeIn(500);
+                $("#calendar-page__papier__date").fadeOut(0);
+            });
+            $("#defisc-page__list__ifi").hover(function () {
+                $("#defisc-page__list__ifi__tooltip").css({"display": "flex"});
+            }, function () {
+                $("#defisc-page__list__ifi__tooltip").css({"display": "none"});
+            });
+            $("#defisc-page__list__ir").hover(function () {
+                $("#defisc-page__list__ir__tooltip").css({"display": "flex"});
+            }, function () {
+                $("#defisc-page__list__ir__tooltip").css({"display": "none"});
+            });
+            $("#defisc-page__list__is").hover(function () {
+                $("#defisc-page__list__is__tooltip").css({"display": "flex"});
+            }, function () {
+                $("#defisc-page__list__is__tooltip").css({"display": "none"});
+            });
+            $("#defisc-page__list__ifi").click(function () {
+                $("#defisc-page__ifi").css("display", "flex");
+                $("#defisc-page__ifi").hide();
+                $("#defisc-page__ifi").fadeIn(500);
+                $("#defisc-page__ir").fadeOut(0);
+                $("#defisc-page__is").fadeOut(0);
+            });
+            $("#defisc-page__list__ir").click(function () {
+                $("#defisc-page__ir").css("display", "flex");
+                $("#defisc-page__ir").hide();
+                $("#defisc-page__ir").fadeIn(500);
+                $("#defisc-page__ifi").fadeOut(0);
+                $("#defisc-page__is").fadeOut(0);
+            });
+            $("#defisc-page__list__is").click(function () {
+                $("#defisc-page__is").css("display", "flex");
+                $("#defisc-page__is").hide();
+                $("#defisc-page__is").fadeIn(500);
+                $("#defisc-page__ir").fadeOut(0);
+                $("#defisc-page__ifi").fadeOut(0);
+            });
+        });
         function defisc(ar) {
             var ifiar = document.getElementById('defisc-page__list__ifi__arrow');
             var irar = document.getElementById('defisc-page__list__ir__arrow');
@@ -992,9 +1055,6 @@
             var txt1 = document.getElementById('defisc-page__list__ifi');
             var txt2 = document.getElementById('defisc-page__list__ir');
             var txt3 = document.getElementById('defisc-page__list__is');
-            var row1 = document.getElementById('defisc-page__ifi');
-            var row2 = document.getElementById('defisc-page__ir');
-            var row3 = document.getElementById('defisc-page__is');
             var circle1 = document.getElementById('defisc-page__ifi__ex');
             var circle2 = document.getElementById('defisc-page__ir__ex');
             var circle3 = document.getElementById('defisc-page__is__ex');
@@ -1006,9 +1066,6 @@
                 txt1.style.color = '#354253';
                 txt2.style.color = 'rgba(53, 66, 83, 0.1)';
                 txt3.style.color = 'rgba(53, 66, 83, 0.1)';
-                row1.style.display = 'flex';
-                row2.style.display = 'none';
-                row3.style.display = 'none';
                 circle1.style.display = 'flex';
                 circle2.style.display = 'none';
                 circle3.style.display = 'none';
@@ -1020,9 +1077,6 @@
                 txt1.style.color = 'rgba(53, 66, 83, 0.1)';
                 txt2.style.color = '#354253';
                 txt3.style.color = 'rgba(53, 66, 83, 0.1)';
-                row1.style.display = 'none';
-                row2.style.display = 'flex';
-                row3.style.display = 'none';
                 circle1.style.display = 'none';
                 circle2.style.display = 'flex';
                 circle3.style.display = 'none';
@@ -1034,9 +1088,6 @@
                 txt1.style.color = 'rgba(53, 66, 83, 0.1)';
                 txt2.style.color = 'rgba(53, 66, 83, 0.1)';
                 txt3.style.color = '#354253';
-                row1.style.display = 'none';
-                row2.style.display = 'none';
-                row3.style.display = 'flex';
                 circle1.style.display = 'none';
                 circle2.style.display = 'none';
                 circle3.style.display = 'flex';
@@ -1059,13 +1110,9 @@
             var paarr = document.getElementById("calendar-page__papier__arrow");
             var enimg = document.getElementById("calendar-page__enligne__img");
             var paimg = document.getElementById("calendar-page__papier__img");
-            var endat = document.getElementById("calendar-page__enligne__date");
-            var padat = document.getElementById("calendar-page__papier__date");
             if (av === 0) {
                 enarr.style.display = "block";
                 paarr.style.display = "none";
-                endat.style.display = "flex";
-                padat.style.display = "none";
                 enligne.style.color = "#354253";
                 papier.style.color = "rgba(53, 66, 83, 0.1)";
                 enimg.src = "./dist/asset/img/enligne.svg";
@@ -1073,8 +1120,6 @@
             } else {
                 enarr.style.display = "none";
                 paarr.style.display = "block";
-                endat.style.display = "none";
-                padat.style.display = "flex";
                 papier.style.color = "#354253";
                 enligne.style.color = "rgba(53, 66, 83, 0.1)";
                 enimg.src = "./dist/asset/img/enligne2.svg";
@@ -1082,8 +1127,5 @@
             }
         }
     </script>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -20,11 +20,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f5d71d99-17b1-420c-8460-63bfa8ccf2e0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/sass/components/_modal-dom.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sass/components/_tooltip.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sass/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/main.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sass/pages/_home.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/pages/_home.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sass/utils/_mixins.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/utils/_mixins.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
